@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from article.views import HelloTemplate
 
 urlpatterns = patterns('',
     # Examples:
@@ -7,4 +8,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+	url(r'^hello/', 'article.views.hello'),
+	url(r'^hello_template_simple/', 'article.views.hello_template_simple'),
+	url(r'^hello_template/', 'article.views.hello_template'),
+	url(r'^hello_class/', HelloTemplate.as_view()),
 )
