@@ -1,4 +1,7 @@
 *.pyc
 jquery.js
 *.*~
-
+naxxserian/article/static/css/
+!naxxserian/article/static/css/naxxserian.css
+naxxserian/article/static/js/
+!naxxserian/article/static/js/naxxserian.js
